@@ -4,7 +4,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 Future<List<dynamic>> Yorumlari_Cek(String film_adi) async {
-  const apiKey = '1c8e0d6a74bb2322dbc8ef356ec61dc3';
+  const apiKey = 'apikey';
   final url =
       'https://api.themoviedb.org/3/search/movie?api_key=$apiKey&query=$film_adi';
   final response = await http.get(Uri.parse(url));
